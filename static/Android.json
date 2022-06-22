@@ -1,0 +1,133 @@
+[
+  {
+    "question": " Is it possible to have an activity without UI to perform action/actions?",
+
+    "option1": " Not possible",
+
+    "option2": " Wrong question",
+
+    "option3": " Yes, it is possible",
+
+    "option4": " None of the above",
+
+    "answer": " Yes, it is possible"
+  },
+  {
+    "question": " On which thread services work in android?",
+
+    "option1": " Worker Thread",
+
+    "option2": " Own Thread",
+
+    "option3": " Main Thread",
+
+    "option4": " None of the above",
+
+    "answer": " Main Thread"
+  },
+  {
+    "question": " What are the return values of onStartCommand() in android services?",
+
+    "option1": " START_STICKY",
+
+    "option2": " START_NOT_STICKY",
+
+    "option3": " START_REDELIVER_INTENT",
+
+    "option4": " All of the above",
+
+    "answer": " All of the above"
+  },
+  {
+    "question": " What is the time limit of broadcast receiver in android?",
+
+    "option1": " 10 sec",
+
+    "option2": " 15 sec",
+
+    "option3": " 5 sec",
+
+    "option4": " 1 hour",
+
+    "answer": " 10 sec"
+  },
+  {
+    "question": " What is the application class in android?",
+
+    "option1": " class that can create only an object",
+
+    "option2": " Anonymous class",
+
+    "option3": " Java class",
+
+    "option4": " Base class for all classes",
+
+    "answer": " Base class for all classes"
+  },
+  {
+    "question": " Which method is used to find GPS enabled or disabled pro-grammatically in android?",
+
+    "option1": " finish()",
+
+    "option2": " getGPSStatus()",
+
+    "option3": " onProviderDisable()",
+
+    "option4": " getGPS()",
+
+    "answer": " onProviderDisable()"
+  },
+  {
+    "question": " Data can be read from local source XML in android through",
+
+    "option1": " XML resource parser",
+
+    "option2": " XML pull parsing",
+
+    "option3": " DOM parsing",
+
+    "option4": " None of the above",
+
+    "answer": " XML resource parser"
+  },
+
+  {
+    "question": " How to find the JSON element length in android JSON?",
+
+    "option1": " count()",
+
+    "option2": " sum()",
+
+    "option3": " add()",
+
+    "option4": " length()",
+
+    "answer": " length()"
+  },
+  {
+    "question": " What is transient data in android?",
+
+    "option1": " Permanent data",
+
+    "option2": " Secure data",
+
+    "option3": " Temporary data",
+
+    "option4": " Logical data",
+
+    "answer": " Logical data"
+  },
+  {
+    "question": " What is a thread in android?",
+
+    "option1": " Same as services",
+
+    "option2": " Background activity",
+
+    "option3": " Broadcast Receiver",
+
+    "option4": " Independent dis-patchable unit is called a thread",
+
+    "answer": " Independent dis-patchable unit is called a thread"
+  }
+]

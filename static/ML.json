@@ -1,0 +1,135 @@
+[
+    {
+      "question": " What is true about Machine Learning ? ",
+  
+      "option1": " Machine Learning (ML) is that field of computer science",
+  
+      "option2": " ML is a type of artificial intelligence that extract patterns out of raw data by using an algorithm or method",
+  
+      "option3": " The main focus of ML is to allow computer systems learn from experience without being explicitly programmed or human intervention.",
+  
+      "option4": " All of the above",
+  
+      "answer": " All of the above"
+},
+    {
+        "question": " __________________ algorithms enable the computers to learn from data, and even improve themselves, without being explicitly programmed.",
+    
+        "option1": " Artificial Intelligence",
+    
+        "option2": " Machine Learning",
+    
+        "option3": " Deep Learning",
+    
+        "option4": " Traditional Learning",
+    
+        "answer": " Machine Learning"
+      },
+      {
+        "question": " What device below is not an example of Machine Learning ?",
+    
+        "option1": " Google Assistant",
+    
+        "option2": " Google Search",
+    
+        "option3": " Speech to Text",
+    
+        "option4": " None of the above",
+    
+        "answer": " None of the above"
+      },
+      {
+        "question": " What year was the E.N.I.A.C. first invented ?",
+    
+        "option1": " 1904",
+    
+        "option2": " 1914",
+    
+        "option3": " 1940",
+    
+        "option4": " 1490",
+    
+        "answer": " 1940"
+      },
+      {
+        "question": " What doe ENIAC stands for?",
+    
+        "option1": " Electric Number Intersect A Calculator",
+    
+        "option2": " Electronic Numerical Integrator and Computer",
+    
+        "option3": " Engineering Numbering Into Auto Correct",
+    
+        "option4": " Enter Number In Auto Correct",
+    
+        "answer": " Electronic Numerical Integrator and Computer"
+      },
+      {
+        "question": " Which one in the following is not Machine Learning disciplines ?",
+    
+        "option1": " Neurostatistics",
+    
+        "option2": " Information Theory",
+    
+        "option3": " Physics",
+    
+        "option4": " Optimization + Control",
+    
+        "answer": " Neurostatistics"
+      },
+      {
+        "question": " Which of the following is not type of learning?",
+    
+        "option1": " Semi-unsupervised Learning",
+    
+        "option2": " Unsupervised Learning",
+    
+        "option3": " Supervised Learning",
+    
+        "option4": " Reinforcement Learning",
+    
+        "answer": " Semi-unsupervised Learning"
+      },
+      {
+        "question": " Tom Mitchell of Carnegie Mellon University said that, 'A computer program is said to learn from experience E with respect to some 'T' and some performance measure P, if its performance on T, as measured by P, improves with experience E.' What is 'T'?",
+    
+        "option1": " Time",
+    
+        "option2": " Test",
+    
+        "option3": " Temper",
+    
+        "option4": " Task",
+    
+        "answer": " Task"
+      },
+      {
+        "question": " Application of machine learning methods to large databases is called.",
+    
+        "option1": " data mining.",
+    
+        "option2": " artificial intelligence",
+    
+        "option3": "  big data computing",
+    
+        "option4": "  internet of things",
+    
+        "answer": " data mining."
+      },
+      {
+        "question": " If machine learning model output involves target variable then that model is called as",
+    
+        "option1": " descriptive model",
+    
+        "option2": " predictive model",
+    
+        "option3": " reinforcement learning",
+    
+        "option4": " all of the above",
+    
+        "answer": " predictive model"
+      }
+    
+    
+    
+]

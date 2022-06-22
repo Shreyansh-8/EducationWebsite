@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Syne+Mono&display=swap"
+    rel="stylesheet" />
+  <title>GeniusAxis</title>
+  <style>
+    body {
+      font-family: 'Syne Mono', monospace;
+    }
+    .cont {
+           background-image: url("../static/crousel.gif");
+            margin: 22px;
+            padding: 64px;
+            opacity: 0.85;
+                height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+        }
+
+    #navigation {
+      background-color: rgba(250, 75, 31, 0.986);
+    }
+
+    .navlink {
+      text-decoration: none;
+    }
+
+    #backgroundImg {
+      background-image: url("../static/bg-3.jpg");
+      height:
+        100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body id="backgroundImg">
+  <nav id="navigation" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light " href="#">GeniusAxis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  text-light active mx-3" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light mx-3" href="/courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light mx-3" href="/quiz">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3" href="/resume">Resume Generator</a>
+          </li>
+      </div>
+    </div>
+    <div class="text-align-right mx-2">
+      <button id="btn" class="btn btn-outline-light" onclick="logout()" type="submit"> <a id="btnlnk" class="navlink" href="">Logout</a> </button>
+    </div>
+  </nav>
+  <main>
+    <div class="cont">
+        <div class="jumbotron">
+            <h1 class="display-4 text-dark"> <b>Welcome</b></h1>
+            <h3 class="lead text-dark"><b>"Empowering students to create solutions for tomorrow’s challenges"</b></h3>
+            <hr class="my-3">
+        </div>
+    </div>
+
+   
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing my-3">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="/static/NAV_01_01_0050.png" alt="" height="200" width="200">
+
+          <h2>Learning Objectives</h2>
+          <p>Learning objectives are typically developed for both individual courses and full programs.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="/static/images20.jpg" alt="" height="200" width="200">
+
+          <h2>Flexibility</h2>
+          <p>A student can watch the recorded lecture anytime and on repeat until the concept is very well understood.
+          </p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="/static/image21.jpg" alt="" height="200" width="200">
+
+          <h2>Assessments</h2>
+          <p>Quiz is designed to measure your progress toward those objectives.</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><span class="text-muted">Online education offers many positive benefits since students:</span>
+          </h2>
+          <p class="lead">
+            <ul>
+              <li>have flexibility in taking classes and working at their own pace and time</li>
+              <li>face no commuting or parking hassles.</li>
+              <li>learn to become responsible for their own education with information available at their fingertips</li>
+              <li>find the submission of assignments easy and convenient.</li>
+              <li>Are more apt to voice their own opinions and share and debate issues with other students, as well as learn
+            from other students during the group discussions.</li>
+            </ul></p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" src="/static/feature1(1).png" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading"><span class="text-muted">Future of Online Education</span></h2>
+          <p class="lead">Online teaching is here to stay. Many students prefer the online classroom since it offers flexibility in their busy schedules. With the proliferation of information and knowledge, students must become lifelong learners in today's world, and online education plays an important role in helping individuals access the learner-centered and self-directed instruction.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-circle" width="500"
+            height="500" src="/static/feature2.jpg" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"><span class="text-muted"> Establish structures:</span></h2>
+          <p class="lead">Many students need help managing work time and productivity when adapting to a virtual environment. Provide checklists that break out the steps for task completion to help them understand the scope of the work and the milestones they’ll accomplish along the way. Do check-ins to monitor progress on checklists and collect assessment data on students’ growth</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-circle" width="500"
+            height="500" src="/static/feature3.png" alt="">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p class="navlink">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+    </footer>
+
+  
+  </main>
+<script>
+  let btn = document.querySelector("#btn");
+  btn.addEventListener('click', logout)
+  function logout(){
+    console.log("hii")
+    let btnlnk = document.getElementById("btnlnk");
+    btnlnk.setAttribute('href','/')
+    
+
+  }
+</script>
+
+  <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

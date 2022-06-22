@@ -1,0 +1,135 @@
+[
+    {
+      "question": " Which of the following is the correct identifier ?",
+  
+      "option1": " $var_name",
+  
+      "option2": " VAR_123",
+  
+      "option3": " varname@",
+  
+      "option4": " None of the above",
+  
+      "answer": " VAR_123"
+},
+    {
+        "question": " Which of the following is the address operator ?",
+    
+        "option1": " @",
+    
+        "option2": " #",
+    
+        "option3": " &",
+    
+        "option4": " %",
+    
+        "answer": " &"
+      },
+      {
+        "question": " Which of the following features must be supported by any programming language to become a pure object-oriented programming language ?",
+    
+        "option1": " Encapsulation",
+    
+        "option2": " Inheritance",
+    
+        "option3": " Polymorphism",
+    
+        "option4": " All of the above",
+    
+        "answer": " All of the above"
+      },
+      {
+        "question": " The programming language that has the ability to create new data types is called___.",
+    
+        "option1": " Overloaded",
+    
+        "option2": " Encapsulated",
+    
+        "option3": " Reprehensible",
+    
+        "option4": " Extensible",
+    
+        "answer": " Extensible"
+      },
+      {
+        "question": " Which of the following is the correct syntax to read the single character to console in the C++ language ?",
+    
+        "option1": " Read ch()",
+    
+        "option2": " Getline vh()",
+    
+        "option3": " get(ch)",
+    
+        "option4": " Scanf(ch)",
+    
+        "answer": " get(ch)"
+      },
+      {
+        "question": " Which of the following statements is correct about the formal parameters in C++ ?",
+    
+        "option1": " Parameters with which functions are called",
+    
+        "option2": "  Parameters which are used in the definition of the function",
+    
+        "option3": "  Variables other than passed parameters in a function",
+    
+        "option4": "  Variables that are never used in the function",
+    
+        "answer": "  Parameters with which functions are called"
+      },
+      {
+        "question": "The C++ language is ______ object-oriented language.",
+    
+        "option1": " Pure Object oriented",
+    
+        "option2": " Not Object oriented",
+    
+        "option3": " Semi Object-oriented or Partial Object-oriented",
+    
+        "option4": " None of the above",
+    
+        "answer": " Semi Object-oriented or Partial Object-oriented"
+      },
+      {
+        "question": " Which of the following comment syntax is correct to create a single-line comment in the C++ program ?",
+    
+        "option1": " //Comment",
+    
+        "option2": " /Comment/",
+    
+        "option3": " Comment//",
+    
+        "option4": " None of the above",
+    
+        "answer": " //Comment"
+      },
+      {
+        "question": " C++ is a ___ type of language.",
+    
+        "option1": " High-level Language",
+    
+        "option2": " Low-level language",
+    
+        "option3": " Middle-level language",
+    
+        "option4": " None of the above",
+    
+        "answer": " Middle-level language"
+      },
+      {
+        "question": " Which of the following refers to characteristics of an array ?",
+    
+        "option1": " An array is a set of similar data items",
+    
+        "option2": " An array is a set of distinct data items",
+    
+        "option3": " An array can hold different types of datatypes",
+    
+        "option4": " None of the above",
+    
+        "answer": " An array is a set of similar data items"
+      }
+    
+    
+    
+]

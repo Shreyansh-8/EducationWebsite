@@ -1,0 +1,135 @@
+[
+    {
+      "question": " _________________ is a billing and account management service.",
+  
+      "option1": "  Amazon Mechanical Turk",
+  
+      "option2": "  Amazon Elastic MapReduce",
+  
+      "option3": "  Amazon DevPay",
+  
+      "option4": "  Multi-Factor Authentication",
+  
+      "answer": " Amazon DevPay"
+},
+    {
+        "question": "  ________________ is the central application in the AWS portfolio.",
+    
+        "option1": " Amazon Simple Queue Service",
+    
+        "option2": " Amazon Elastic Compute Cloud",
+    
+        "option3": " Amazon Simple Notification Service",
+    
+        "option4": "  All of the above",
+    
+        "answer": " Amazon Elastic Compute Cloud"
+      },
+      {
+        "question": " Amazon Web Services falls into which of the following cloud-computing category ?",
+    
+        "option1": " Platform as a Service",
+    
+        "option2": " Software as a Service",
+    
+        "option3": " Infrastructure as a Service",
+    
+        "option4": " Back-end as a Service",
+    
+        "answer": " Infrastructure as a Service"
+      },
+      {
+        "question": " How many buckets can you create in AWS by default?",
+    
+        "option1": "  100 buckets",
+    
+        "option2": "  200 buckets",
+    
+        "option3": "  110 buckets",
+    
+        "option4": "  125 buckets",
+    
+        "answer": " 100 buckets"
+      },
+      {
+        "question": " What are the different types of instances ?",
+    
+        "option1": " General purpose",
+    
+        "option2": " Computer Optimized",
+    
+        "option3": " Storage Optimized",
+    
+        "option4": " All of the above",
+    
+        "answer": " All of the above"
+      },
+      {
+        "question": " What are the advantages of auto-scaling ?",
+    
+        "option1": " Better availability",
+    
+        "option2": "  Offers fault tolerance",
+    
+        "option3": "  Better cost management",
+    
+        "option4": "  All of the above",
+    
+        "answer": "  All of the above"
+      },
+      {
+        "question": " The types of AMI provided by AWS are:",
+    
+        "option1": " Instance store backed",
+    
+        "option2": " EBS backed",
+    
+        "option3": " Both 1 & 2",
+    
+        "option4": " None of the above",
+    
+        "answer": " Both 1 & 2"
+      },
+      {
+        "question": " Storage classes available with Amazon s3 are",
+    
+        "option1": " Amazon S3 standard",
+    
+        "option2": " Amazon S3 standard-infrequent Access",
+    
+        "option3": " Amazon Glacier",
+    
+        "option4": " All of the above",
+    
+        "answer": " All of the above"
+      },
+      {
+        "question": " Which of the following statement is wrong about Amazon S3 ?",
+    
+        "option1": " Amazon S3 provides large quantities of reliable storage that is highly protected",
+    
+        "option2": " Amazon S3 is highly available",
+    
+        "option3": " Amazon S3 is highly reliable",
+    
+        "option4": " All of the above",
+    
+        "answer": " Amazon S3 is highly reliable"
+      },
+      {
+        "question": " Amazon S3 is which type of storage service ?",
+    
+        "option1": " Block",
+    
+        "option2": " Object",
+    
+        "option3": " Simple",
+    
+        "option4": " Secure",
+    
+        "answer": " Object"
+      }
+    
+    
+    
+]

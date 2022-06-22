@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Syne+Mono&display=swap"
+    rel="stylesheet" />
+    <title>Hello, world!</title>
+    <style>
+        body {
+      font-family: 'Syne Mono', monospace;
+    }
+    #courses{
+      display: inline;
+    }
+    .btns{
+      display: inline;
+    }
+      .cont {
+           background-image: url("../static/crousel2.jpg");
+            margin: 22px;
+            padding: 64px;
+            opacity: 0.85;
+                height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+        }
+         #navigation {
+      background-color: rgba(250, 75, 31, 0.986);
+    }
+    #backgroundImg {
+      background-color: wheat;
+    }
+
+    .navlink {
+      text-decoration: none;
+    }
+    </style>
+  </head>
+  <body id="backgroundImg">
+   <nav id="navigation" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light " href="#">GeniusAxis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  text-light active mx-3"  href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light mx-3" href="/courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light mx-3" aria-current="page" href="/quiz">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3" href="/resume">Resume Generator</a>
+          </li>
+      </div>
+    </div>
+    <div class="text-align-right mx-2">
+      <button id="btn" class="btn btn-outline-light" onclick="logout()" type="submit"> <a id="btnlnk" class="navlink" href="">Logout</a> </button>
+    </div>
+  </nav>
+   <div class="cont">
+        <div class="jumbotron justify-content-center">
+            <h2 class="lead text-light">"Select the course and Get Ready"</h2>
+            <select id="courses" class="form-select w-25" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="Android">Android</option>
+  <option value="JavaScript">JavaScript</option>
+  <option value="Web Development">Web Development</option>
+  <option value="Artificial Intelligence">Artificial Intelligence</option>
+   <option value="Machine Learning">Machine Learning</option>
+  <option value="DBMS">DBMS</option>
+  <option value="JAVA">JAVA</option>
+  <option value="C++">C++</option>
+  <option value="Amazon Web Services">Amazon Web Services</option>
+</select>
+ <button id="quizbtn" class="btn btn-outline-light">generate</button>
+            <hr class="my-3">
+        </div>
+    </div>
+     <div  class="d-flex flex-column m-4 p-4 border border-warning border-3 rounded-3">
+       <form name="quiz" id="Bbox" action="">
+       <h1 class="text-center">Start Your Quiz Now</h1>
+       
+       </form>
+     </div>
+     <div>
+      
+     </div>
+       {{!-- <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p class="navlink">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+    </footer> --}}
+     <footer class="container my-4">
+            <div class="container text-center">
+       
+            <p class=" navlink">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+            </div>
+            <div class="container">
+                 <p class="text-center"><a href="#">Back to top</a></p>
+                 </div>
+          </footer>
+     {{!-- --}}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script>
+      
+        let content="";
+        let questions = [];
+         let answers = [];
+        let option = document.getElementById('courses')
+        let btn = document.getElementById('quizbtn')
+        btn.addEventListener("click", generate);
+        function generate() {
+            console.log("hello");
+            if(option.value == "Android"){
+            url = "../static/Android.json";
+            
+           
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content = "";
+                    console.log(data);
+                    
+                })
+            }
+             else if(option.value =="JavaScript"){
+              url = "../static/JS.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+             else if(option.value =="Artificial Intelligence"){
+              url = "../static/AI.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+            else if(option.value =="Web Development"){
+              url = "../static/WebDevelopment.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+            else if(option.value =="DBMS"){
+              url = "../static/DBMS.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+             else if(option.value =="Machine Learning"){
+              url = "../static/ML.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+
+            else if(option.value =="Amazon Web Services"){
+              url = "../static/AWS.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+
+             else if(option.value =="JAVA"){
+              url = "../static/JAVA.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+             else if(option.value =="C++"){
+              url = "../static/cpp.json";
+              
+              
+            fetch(url)
+                .then((response) => {
+                    return response.json();
+                }).then((data) => {
+                  let c = 1;
+                    data.forEach(function f(element){
+                      questions.push(element.question);
+                      answers.push(element.answer);
+                    let quiz = `<h4>Question ${c}-${element.question}</h4>
+                    <p> <input type="radio" name="question${c}" value="${element.option1}">${element.option1} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option2}">${element.option2} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option3}">${element.option3} </p>
+                    <p> <input type="radio" name="question${c}" value="${element.option4}">${element.option4} </p>`;
+                    content = content + quiz;
+                    c=c+1;
+                    })
+                    content = content + `<input class="btn btn-outline-success" type="button" value="submit" onclick="result()">`;
+                    document.querySelector('#Bbox').innerHTML = content;
+                    content ="";
+                    console.log(data);
+                    
+                })
+               
+            }
+        }
+
+         let count= 0; 
+         let ques = "";
+         let Ansarr = [];
+        function result(){
+         
+          if(document.quiz.question1.value == answers[0]){
+            count = count+1;
+          }
+          if(document.quiz.question2.value == answers[1]){
+            
+            Ansarr.push(document.quiz.question2.value);
+          
+            count = count+1;
+          }
+          if(document.quiz.question3.value == answers[2]){
+           push(document.quiz.question3.value);
+            
+            count = count+1;
+          }
+          if(document.quiz.question4.value == answers[3]){
+           
+            count = count+1;
+          }
+          if(document.quiz.question5.value == answers[4]){
+           
+            count = count+1;
+          }
+          if(document.quiz.question6.value == answers[5]){
+         
+            count = count+1;
+          }
+          if(document.quiz.question7.value == answers[6]){
+            
+            count = count+1;
+          }
+          if(document.quiz.question8.value == answers[7]){
+          
+            count = count+1;
+          }
+          if(document.quiz.question9.value == answers[8]){
+           
+            count = count+1;
+          }
+          if(document.quiz.question10.value == answers[9]){
+            
+            count = count+1;
+          }
+          console.log(answers);
+          console.log(count);
+           for(let i = 0; i< questions.length;i++){
+            ques = ques + `<p>Question ${i+1} - ${questions[i]}</p>
+           
+                    <p>Answer - ${answers[i]}</p>`;
+          }
+           let marks = `<h1 class="text-center my-3">You secured ${count}/10</h1>` + ques;
+           document.querySelector("#Bbox").innerHTML = marks;
+           answers = []
+           questions = []
+           ques = "";
+           marks = "";
+           console.log(Ansarr)
+        } 
+    </script>
+  </body>
+</html>

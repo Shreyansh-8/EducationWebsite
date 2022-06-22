@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Syne+Mono&display=swap"
+    rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        body {
+      font-family: 'Syne Mono', monospace;
+    }
+        #cv-form{
+    /* display: none; */
+}
+#cv-template{
+    display: none;
+}
+#navigation {
+      background-color: rgba(250, 75, 31, 0.986);
+    }
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+}
+.background{
+    background-color: aquamarine;
+}
+ #backgroundImg {
+      background-color: wheat;
+    }
+    </style>
+</head>
+
+<body id="backgroundImg" >
+     <nav id="navigation" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light " href="#">GeniusAxis</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  text-light active mx-3" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light mx-3" href="/courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light mx-3" href="/quiz">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light mx-3" href="/resume">Resume Generator</a>
+          </li>
+      </div>
+    </div>
+    <div class="text-align-right mx-2">
+      <button id="btn" class="btn btn-outline-light" onclick="logout()" type="submit"> <a id="btnlnk" class="navlink" href="">Logout</a> </button>
+    </div>
+  </nav>
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-2">Resume Generator </h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="namefield ">Your Name</label>
+                    <input type="text" id="namefield" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="contactfield ">Your Contact Number</label>
+                    <input type="text" id="contactfield" class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="addressfield ">Your Address</label>
+                    <textarea id="addressfield" placeholder="Enter Here" class="form-control" cols="30"
+                        rows="5"></textarea>
+                </div>
+                <p class="Secondary-Text my-3">Important Links </p>
+                <div class="form-group mt-2">
+                    <label for="fbfield ">Facebook</label>
+                    <input type="text" id="fbfield" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="instafield ">Instagram</label>
+                    <input type="text" id="instafield" placeholder="Enter here" class="form-control">
+                </div>
+                <div class="form-group mt-2">
+                    <label for="linkedfield ">Linkedin</label>
+                    <input type="text" id="linkedfield" placeholder="Enter here" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Professional Information</h3>
+                <div class="form-group mt-2">
+                    <label for=" ">Objective</label>
+                    <textarea id="objectivefield" row="5" placeholder="Enter Here" class="form-control"></textarea>
+                </div>
+                <div class="form-group mt-2" id="we">
+                    <label for=" ">Work Experience</label>
+                    <textarea placeholder="Enter Here" class="form-control weField" row="3"></textarea>
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addNewWeField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+                <div class="form-group mt-2" id="aq">
+                    <label for=" ">Academic Qualification</label>
+                    <textarea placeholder="Enter Here" class="form-control eqField" row="3"></textarea>
+                    <div class="container text-center mt-2" id="aqAddButton">
+                        <button id="btn2" onclick="addNewaqField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()"  class="btn my-4 btn-primary btn-lg">Generate CV </button>
+        </div>
+    </div>
+    <!-- cv template -->
+
+    <div class="container my-2" id="cv-template">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+                <!-- first col  -->
+                <img src="https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?k=20&m=476085198&s=170667a&w=0&h=FXkT-N6vISLOCUefa9MyQg0pH-6loMX9zBZjgLK458c="
+                    alt=" " class="img-fluid myimg" />
+                <div class="container">
+                    <p id="nameT1">Kartik Sharma</p>
+                    <p id="contactT">+912525252512 , +912512251225</p>
+                    <p id="addressT">C/34 Sector-20 Lucknow , India</p>
+                    <hr />
+                    <p><a id="fbT" href="#1">https://www.facebook.com/ResumeGenerator</a>
+                    </p>
+                    <p><a id="instaT" href="#1">https://www.instagram.com/ResumeGenerator</a>
+                    </p>
+                    <p><a id="linkedT" href="#1">https://www.linkedin.com/ResumeGenerator</a>
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="col-md-8 py-5">
+                <!-- second col  -->
+                <h1 id="nameT2" class="text-center py-2" style="font-weight: 900 ;">Kartik Sharma</h1>
+                <!-- objective card  -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed numquam
+                            asperiores inventore, praesentium optio aspernatur veniam ipsum consequuntur dolor
+                            temporibus, eos atque culpa tempore repudiandae alias eveniet, quia mollitia est cupiditate
+                            enim animi iure nesciunt explicabo? Explicabo dolorum minus inventore modi assumenda,
+                            nesciunt ipsam. Explicabo reprehenderit harum quis accusantium dolorem?</p>
+                    </div>
+                </div>
+                <!-- Work Experience  -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="weT">
+                            <li>
+                            <li>
+
+                            </li>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Academic Qualification  -->
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>
+                            <li>
+
+                            </li>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" class="btn background">
+                        Print CV
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="container my-4">
+            <div class="container text-center">
+       
+            <p class=" navlink">© 2017–2021 Company, Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+            </div>
+            <div class="container">
+                 <p class="text-center"><a href="#">Back to top</a></p>
+                 </div>
+          </footer>
+
+
+    <!-- <script> src="script.js"</script>  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        function addNewWeField() {
+            let newNode = document.createElement("textarea");
+            newNode.classList.add("form-control");
+            newNode.classList.add("weField");
+            newNode.classList.add("mt-2");
+            newNode.setAttribute("rows", 3);
+            newNode.setAttribute("placeholder", "Enter here");
+            let weOb = document.getElementById("we");
+            let weAddButtonOb = document.getElementById("weAddButton");
+            weOb.insertBefore(newNode, weAddButtonOb);
+        }
+        function addNewaqField() {
+            let newNode = document.createElement("textarea");
+            newNode.classList.add("form-control");
+            newNode.classList.add("eqField");
+            newNode.classList.add("mt-2");
+            newNode.setAttribute("rows", 3);
+            newNode.setAttribute("placeholder", "Enter here");
+            let aqOb = document.getElementById("aq");
+            let aqAddButtonOb = document.getElementById("aqAddButton");
+            aqOb.insertBefore(newNode, aqAddButtonOb);
+        }
+        // generating CV 
+        function generateCV() {
+            // console.log("generating CV")
+
+            let namefield = document.getElementById('namefield').value;
+            let nameT1 = document.getElementById('nameT1');
+            nameT1.innerHTML = namefield;
+            // direct
+            document.getElementById("nameT2").innerHTML = namefield;
+            // contact
+            document.getElementById("contactT").innerHTML = document.getElementById("contactfield").value;
+            // address
+            document.getElementById("addressT").innerHTML = document.getElementById("addressfield").value;
+            document.getElementById("fbT").innerHTML = document.getElementById("fbfield").value;
+            document.getElementById("instaT").innerHTML = document.getElementById("instafield").value;
+            document.getElementById("linkedT").innerHTML = document.getElementById("linkedfield").value;
+            // objective
+            document.getElementById('objectiveT').innerHTML = document.getElementById('objectivefield').value;
+            // WE
+            let wes = document.getElementsByClassName('weField')
+            let str = ''
+            for (let e of wes) {
+                str = str + `<li> ${e.value}</li> `;
+
+            }
+            document.getElementById("weT").innerHTML = str;
+            // aq
+            let aqs = document.getElementsByClassName('eqField')
+            let str1 = ''
+            for (let e of aqs) {
+                str1 = str1 + `<li> ${e.value} </li>`;
+            }
+            document.getElementById("aqT").innerHTML = str1;
+
+
+            document.getElementById('cv-form').style.display = 'none';
+            document.getElementById('cv-template').style.display = 'block';
+        }
+        // print cv
+        function printCV() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+[
+    {
+      "question": " Website: A collection of _________________________ web pages on the World Wide Web",
+  
+      "option1": " interlinked",
+  
+      "option2": " paper",
+  
+      "option3": " book",
+  
+      "option4": " comic books",
+  
+      "answer": " interlinked"
+},
+    {
+        "question": " In computer science a language used to create web pages is...",
+    
+        "option1": " HTML",
+    
+        "option2": " TMT",
+    
+        "option3": " LMLH",
+    
+        "option4": " ABSC",
+    
+        "answer": " HTML"
+      },
+      {
+        "question": " Fill in the blank: HTML Hypertext ________________ Language",
+    
+        "option1": " Markup",
+    
+        "option2": " Mac&Cheese",
+    
+        "option3": " Map",
+    
+        "option4": "Majestic",
+    
+        "answer": " Markup"
+      },
+      {
+        "question": " The application/applications of Artificial Intelligence is/are ",
+    
+        "option1": " Expert Systems",
+    
+        "option2": " Gaming",
+    
+        "option3": " Vision Systems",
+    
+        "option4": " All of the above",
+    
+        "answer": " All of the above"
+      },
+      {
+        "question": " When making a web page, which two of the following tasks is HTML the most important language for ?",
+    
+        "option1": " Making the text a different color.",
+    
+        "option2": " Putting borders on an image",
+    
+        "option3": " Separating out headings from paragraphs",
+    
+        "option4": " Adding information about the copyright",
+    
+        "answer": " Separating out headings from paragraphs"
+      },
+      {
+        "question": " A student is using a stylesheet to make all the paragraphs on the website green, but it's not working on index.html, even though it works on the other web pages. What could be causing the problem ?",
+    
+        "option1": " The student forgot to link the stylesheet to the index.html page.",
+    
+        "option2": " The student did not upload the images used in the index.html page.",
+    
+        "option3": " The student accidentally misspelled 'green' in the stylesheet.",
+    
+        "option4": " Organizing text into a list",
+    
+        "answer": " The student forgot to link the stylesheet to the index.html page."
+      },
+      {
+        "question": " Which of the following is true about copyright ?",
+    
+        "option1": " If an image is already on one web page, it's okay to use it on any web page.",
+    
+        "option2": " Image creators can decide both who can use their images and how the images can be used.",
+    
+        "option3": " If there is no copyright information for an image, anyone is free to use it on their own sites.",
+    
+        "option4": " You must always contact the creator for permission to use an image on your site.",
+    
+        "answer": " Image creators can decide both who can use their images and how the images can be used."
+      },
+      {
+        "question": " Heading: A _______________ or _______________ for a document or section of a document.",
+    
+        "option1": " title,summary",
+    
+        "option2": " collection, part",
+    
+        "option3": " website, tag",
+    
+        "option4": " finding, fixing",
+    
+        "answer": " title,summary"
+      },
+      {
+        "question": " Bug: Part of a program that ___________ work correctly.",
+    
+        "option1": " does not",
+    
+        "option2": " does",
+    
+        "option3": " sometimes",
+    
+        "option4": " shows",
+    
+        "answer": " does not"
+      },
+      {
+        "question": " CSS Class: An _____________________ that allows multiple elements in an HTML document to be styled in the same way.",
+    
+        "option1": " element",
+    
+        "option2": " identifier",
+    
+        "option3": " apple",
+    
+        "option4": " mperfection",
+    
+        "answer": " identifier"
+      }
+    
+    
+    
+]

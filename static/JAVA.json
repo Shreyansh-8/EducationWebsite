@@ -1,0 +1,135 @@
+[
+    {
+      "question": " Which of the following option leads to the portability and security of Java ?",
+  
+      "option1": " Bytecode is executed by JVM",
+  
+      "option2": " The applet makes the Java code secure and portable",
+  
+      "option3": " Use of exception handling",
+  
+      "option4": " Dynamic binding between objects",
+  
+      "answer": " Bytecode is executed by JVM"
+},
+    {
+        "question": " Which of the following is not a Java features ?",
+    
+        "option1": " Dynamic",
+    
+        "option2": " Architecture Neutral",
+    
+        "option3": " Use of pointers",
+    
+        "option4": " Object-oriented",
+    
+        "answer": " Use of pointers"
+      },
+      {
+        "question": " _____ is used to find and fix bugs in the Java programs.",
+    
+        "option1": " JVM",
+    
+        "option2": " JRE",
+    
+        "option3": " JDK",
+    
+        "option4": " JDB",
+    
+        "answer": " JDB"
+      },
+      {
+        "question": " What is the return type of the hashCode() method in the Object class ?",
+    
+        "option1": " Object",
+    
+        "option2": " int",
+    
+        "option3": " long",
+    
+        "option4": " void",
+    
+        "answer": " int"
+      },
+      {
+        "question": " What does the expression float a = 35 / 0 return ?",
+    
+        "option1": " 0",
+    
+        "option2": " Not a Number",
+    
+        "option3": " Infinity",
+    
+        "option4": " Run time exception",
+    
+        "answer": " Infinity"
+      },
+      {
+        "question": " What are the advantages of auto-scaling ?",
+    
+        "option1": " Better availability",
+    
+        "option2": "  Offers fault tolerance",
+    
+        "option3": "  Better cost management",
+    
+        "option4": "  All of the above",
+    
+        "answer": "  All of the above"
+      },
+      {
+        "question": " Evaluate the following Java expression, if x=3, y=5, and z=10: ++z + y - y + z + x++ ",
+    
+        "option1": " 24",
+    
+        "option2": " 23",
+    
+        "option3": " 20",
+    
+        "option4": " 25",
+    
+        "answer": " 25"
+      },
+      {
+        "question": " Which of the following tool is used to generate API documentation in HTML format from doc comments in source code ?",
+    
+        "option1": " javap tool",
+    
+        "option2": " javaw command",
+    
+        "option3": " Javadoc tool",
+    
+        "option4": " javah command",
+    
+        "answer": " Javadoc tool"
+      },
+      {
+        "question": " Which of the following creates a List of 3 visible items and multiple selections abled ?",
+    
+        "option1": " new List(false, 3)",
+    
+        "option2": " new List(3, true)",
+    
+        "option3": " new List(true, 3)",
+    
+        "option4": " new List(3, false)",
+    
+        "answer": " new List(3, true)"
+      },
+      {
+        "question": " Which of the following for loop declaration is not valid ?",
+    
+        "option1": " for ( int i = 99; i >= 0; i / 9 )",
+    
+        "option2": " for ( int i = 7; i <= 77; i += 7 )",
+    
+        "option3": " for ( int i = 20; i >= 2; - -i )",
+    
+        "option4": " for ( int i = 2; i <= 20; i = 2* i )",
+    
+        "answer": " for ( int i = 99; i >= 0; i / 9 )"
+      }
+    
+    
+    
+]
